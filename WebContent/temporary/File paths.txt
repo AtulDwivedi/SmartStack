@@ -1,0 +1,18 @@
+<!-- Bootstrap core CSS -->
+<link href="${pageContext.request.contextPath}/resources/css/bootstrap.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/bootstrap-theme.css" rel="stylesheet">
+ <link href="${pageContext.request.contextPath}/resources/css/navbar-fixed-top.css" rel="stylesheet">
+ <link href="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui.css" rel="stylesheet">
+<!-- /Bootstrap core CSS -->
+
+
+
+<!-- Script -->
+<script src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ajax.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui-basics.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui-advanced.js" type="text/javascript"></script>
+<!-- /Script -->

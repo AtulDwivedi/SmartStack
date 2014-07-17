@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:mvc="http://www.springframework.org/schema/mvc"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+      
+      
+ <mvc:interceptors>
+<!--  <mvc:interceptor>
+        <mvc:mapping path="/WEB-INF/**"/> -->
+ <bean id="webContentInterceptor" class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+ <property name="cacheSeconds" value="0"/>
+ <property name="useExpiresHeader" value="true"/>
+ <property name="useCacheControlHeader" value="true"/>
+ <property name="useCacheControlNoStore" value="true"/>
+ </bean>
+<!--  </mvc:interceptor> -->
+</mvc:interceptors>
+      
+ 
+  
+      <bean id="qaModelObj" class="com.smartstack.models.QuestionAndAnswerBL">
+      <property name="qaService"><ref bean="qaImp"/></property>
+      </bean>
+      
+       <bean id="qaImp" class="com.smartstack.service.QAImplementation" >
+       <property name="daoServe"> <ref bean="daoImp"/> </property>
+  </bean>
+ 
+ 
+      
+      <bean id="fetch1" class="com.smartstack.models.RegisterBL">
+      <property name="userServe"><ref bean="userImp"/></property>
+      </bean>
+      
+       <bean id="userImp" class="com.smartstack.service.UserImplementation" >
+       <property name="daoServe"> <ref bean="daoImp"/> </property>
+	</bean>
+
+
+ 
+ <bean id="daoImp" class="com.smartstack.dao.DAOImplementation">
+		<property name="hibernateTemplate" ref="hibernateTemplateBean"></property>
+	</bean>
+
+
+	<bean id="hibernateTemplateBean" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactoryBean"></property>
+	</bean>
+ 
+      
+      <bean id="sessionFactoryBean" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceBean"></property>
+		<property name="mappingResources">
+			<value>com/smartstack/dto/Address.hbm.xml</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
+			</props>
+		</property>
+	</bean>
+      
+      
+      
+    <bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="username" value="system"></property>
+		<property name="password" value="oracle"></property>
+	</bean>  
+</beans>

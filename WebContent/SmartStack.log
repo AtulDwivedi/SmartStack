@@ -1,0 +1,927 @@
+2014-01-29 21:23:32 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:12:49 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:23:32 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b5f21: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1cbf86a
+2014-01-29 21:23:33 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:12:28 IST 2014]; root of context hierarchy
+2014-01-29 21:23:33 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cbf86a: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:23:33 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:23:35 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:23:35 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:23:35 IST 2014]; root of context hierarchy
+2014-01-29 21:23:35 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:23:35 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2014-01-29 21:23:35 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+2014-01-29 21:23:35 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2014-01-29 21:23:35 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2014-01-29 21:23:35 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+2014-01-29 21:23:35 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2014-01-29 21:23:35 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+2014-01-29 21:23:35 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2014-01-29 21:23:35 DEBUG XmlBeanDefinitionReader:185 - Loaded 9 bean definitions from location pattern [/WEB-INF/applicationContext.xml]
+2014-01-29 21:23:35 DEBUG XmlWebApplicationContext:470 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@24e1bf: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:23:35 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@f1158f]
+2014-01-29 21:23:35 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1e9c78e]
+2014-01-29 21:23:35 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@152b430]
+2014-01-29 21:23:35 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@24e1bf: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'webContentInterceptor'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'webContentInterceptor'
+2014-01-29 21:23:35 DEBUG BeanUtils:421 - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'qaModelObj'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'qaModelObj'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'qaModelObj' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'qaImp'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'qaImp'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'qaImp' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'daoImp'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'daoImp'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'daoImp' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'hibernateTemplateBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'hibernateTemplateBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'hibernateTemplateBean' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'sfBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'sfBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'sfBean' to allow for resolving potential circular references
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'dataSourceBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'dataSourceBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'dataSourceBean' to allow for resolving potential circular references
+2014-01-29 21:23:35 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'dataSourceBean'
+2014-01-29 21:23:35 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'sfBean'
+2014-01-29 21:23:36 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:23:36 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:37 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'sfBean'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'hibernateTemplateBean'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'hibernateTemplateBean'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'daoImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'daoImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'qaImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'qaModelObj'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'qaImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'fetch1'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'fetch1'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'fetch1' to allow for resolving potential circular references
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'userImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'userImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'userImp' to allow for resolving potential circular references
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'daoImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'userImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'fetch1'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'userImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'daoImp'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'hibernateTemplateBean'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'sfBean'
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'dataSourceBean'
+2014-01-29 21:23:38 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@960553]
+2014-01-29 21:23:38 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2014-01-29 21:23:38 DEBUG ContextLoader:209 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2014-01-29 21:23:38 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 3581 ms
+2014-01-29 21:23:38 DEBUG DispatcherServlet:109 - Initializing servlet 'dispatcher'
+2014-01-29 21:23:38 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:23:38 DEBUG DispatcherServlet:402 - Servlet with name 'dispatcher' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Wed Jan 29 21:23:35 IST 2014]; root of context hierarchy]
+2014-01-29 21:23:38 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:23:38 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:23:38 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:23:38 DEBUG DefaultDocumentLoader:72 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2014-01-29 21:23:38 DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+2014-01-29 21:23:38 DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2014-01-29 21:23:38 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2014-01-29 21:23:38 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+2014-01-29 21:23:38 DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2014-01-29 21:23:38 DEBUG DefaultBeanDefinitionDocumentReader:87 - Loading bean definitions
+2014-01-29 21:23:38 DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2014-01-29 21:23:39 DEBUG PathMatchingResourcePatternResolver:552 - Looking for matching resources in directory tree [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers]
+2014-01-29 21:23:39 DEBUG PathMatchingResourcePatternResolver:614 - Searching directory [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers] for files matching pattern [C:/Users/Atul Dwivedi/Dropbox/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/SmartStack/WEB-INF/classes/com/smartstack/controllers/**/*.class]
+2014-01-29 21:23:39 DEBUG PathMatchingResourcePatternResolver:353 - Resolved location pattern [classpath*:com/smartstack/controllers/**/*.class] to resources [file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\AjaxController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\IndexController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\LoginController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\LogoutController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\MyAccountController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\MyIndexController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\QuestionController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\RegisterController.class], file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\SolutionController.class]]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\AjaxController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\IndexController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\LoginController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\LogoutController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\MyAccountController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\MyIndexController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\QuestionController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\RegisterController.class]
+2014-01-29 21:23:39 DEBUG ClassPathBeanDefinitionScanner:220 - Identified candidate component class: file [C:\Users\Atul Dwivedi\Dropbox\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\wtpwebapps\SmartStack\WEB-INF\classes\com\smartstack\controllers\SolutionController.class]
+2014-01-29 21:23:39 DEBUG BeanDefinitionParserDelegate:417 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+2014-01-29 21:23:39 DEBUG XmlBeanDefinitionReader:185 - Loaded 14 bean definitions from location pattern [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:23:39 DEBUG XmlWebApplicationContext:470 - Bean factory for WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@1917066: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@24e1bf
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG XmlWebApplicationContext:776 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@d3483b]
+2014-01-29 21:23:39 DEBUG XmlWebApplicationContext:800 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@217ca]
+2014-01-29 21:23:39 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@196296d]
+2014-01-29 21:23:39 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1917066: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@24e1bf
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'ajaxController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'ajaxController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'ajaxController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'indexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'indexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'indexController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'indexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'loginController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'loginController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'loginController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'logoutController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'logoutController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'logoutController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'logoutController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'myAccountController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'myAccountController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'myAccountController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'myAccountController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'myIndexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'myIndexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'myIndexController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'myIndexController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'questionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'questionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'questionController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'questionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'registerController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'registerController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'registerController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'registerController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'solutionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'solutionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'solutionController' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'solutionController'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:214 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2014-01-29 21:23:39 DEBUG XmlWebApplicationContext:827 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@b67ece]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:362 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:384 - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@f6efc2]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:406 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@48e27a]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:23:38 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'ajaxController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'indexController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'loginController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'logoutController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'myAccountController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'myIndexController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'questionController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'registerController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'solutionController': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2014-01-29 21:23:39 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'lifecycleProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:71 - Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:23:38 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@10e529]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@10e529]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@10e529]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@10e529]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'ajaxController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@10e529]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'indexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@16e6c7e]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'indexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@16e6c7e]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'indexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@16e6c7e]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'loginController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@9b3008]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'logoutController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@2d6a3d]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myAccountController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@12cd998]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myAccountController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@12cd998]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myAccountController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@12cd998]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myIndexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@1087eac]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myIndexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@1087eac]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'myIndexController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@1087eac]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'questionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@400806]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'questionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@400806]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'registerController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@1d2f7a1]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'solutionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@be4903]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'solutionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@be4903]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'solutionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@be4903]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'solutionController'
+2014-01-29 21:23:39 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@be4903]
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'servletConfig': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultAnnotationHandlerMapping:86 - Rejected bean name 'lifecycleProcessor': no URL paths identified
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:446 - No HandlerMappings found in servlet 'dispatcher': using default
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:484 - No HandlerAdapters found in servlet 'dispatcher': using default
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:523 - No HandlerExceptionResolvers found in servlet 'dispatcher': using default
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:544 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@105cbbb]
+2014-01-29 21:23:39 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2014-01-29 21:23:39 DEBUG DispatcherServlet:353 - Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+2014-01-29 21:23:39 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 777 ms
+2014-01-29 21:23:39 DEBUG DispatcherServlet:130 - Servlet 'dispatcher' configured successfully
+2014-01-29 21:23:48 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/indexReal.spring]
+2014-01-29 21:23:48 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/indexReal.spring] to handler 'com.smartstack.controllers.IndexController@16e6c7e'
+2014-01-29 21:23:48 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/indexReal.spring] is: -1
+2014-01-29 21:23:48 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/indexReal.spring]
+2014-01-29 21:23:48 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/indexReal.spring]
+2014-01-29 21:23:48 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/indexReal.spring]
+2014-01-29 21:23:48 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.IndexController.get(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2014-01-29 21:23:48 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:23:48 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:23:48 INFO  IndexController:62 - No. of Questions: 0
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:23:48 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:48 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:23:48 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:23:48 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:23:48 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:48 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:23:48 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:23:48 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:23:49 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:23:49 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:23:49 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:23:49 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'index'
+2014-01-29 21:23:49 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/index.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:23:49 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'index'
+2014-01-29 21:23:49 DEBUG JstlView:236 - Forwarding to resource [/index.jsp] in InternalResourceView 'index'
+2014-01-29 21:23:49 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:20 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/indexReal.spring]
+2014-01-29 21:24:20 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/indexReal.spring] to handler 'com.smartstack.controllers.IndexController@16e6c7e'
+2014-01-29 21:24:20 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/indexReal.spring] is: -1
+2014-01-29 21:24:20 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/indexReal.spring]
+2014-01-29 21:24:20 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/indexReal.spring]
+2014-01-29 21:24:20 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/indexReal.spring]
+2014-01-29 21:24:20 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.IndexController.get(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2014-01-29 21:24:20 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:24:20 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:24:20 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:20 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:20 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:20 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:20 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:24:20 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:20 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:20 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:20 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:20 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/index.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:20 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'index'
+2014-01-29 21:24:20 DEBUG JstlView:236 - Forwarding to resource [/index.jsp] in InternalResourceView 'index'
+2014-01-29 21:24:20 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:31 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing POST request for [/SmartStack/authenticate.spring]
+2014-01-29 21:24:31 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/authenticate.spring] to handler 'com.smartstack.controllers.AjaxController@10e529'
+2014-01-29 21:24:31 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/authenticate.spring]
+2014-01-29 21:24:31 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/authenticate.spring]
+2014-01-29 21:24:31 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public java.lang.String com.smartstack.controllers.AjaxController.authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:24:31 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'notOk'
+2014-01-29 21:24:31 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'notOk'; URL [/notOk.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:31 DEBUG JstlView:236 - Forwarding to resource [/notOk.jsp] in InternalResourceView 'notOk'
+2014-01-29 21:24:31 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:36 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing POST request for [/SmartStack/login.spring]
+2014-01-29 21:24:36 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/login.spring] to handler 'com.smartstack.controllers.LoginController@9b3008'
+2014-01-29 21:24:36 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/login.spring]
+2014-01-29 21:24:36 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/login.spring]
+2014-01-29 21:24:36 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public java.lang.String com.smartstack.controllers.LoginController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:24:36 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:36 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:36 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:36 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:36 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:36 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name '/WEB-INF/first'
+2014-01-29 21:24:36 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/first'; URL [//WEB-INF/first.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:36 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/first.jsp] in InternalResourceView '/WEB-INF/first'
+2014-01-29 21:24:36 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:36 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/myIndex.spring]
+2014-01-29 21:24:36 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/myIndex.spring] to handler 'com.smartstack.controllers.MyIndexController@1087eac'
+2014-01-29 21:24:36 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/myIndex.spring] is: -1
+2014-01-29 21:24:36 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/myIndex.spring]
+2014-01-29 21:24:36 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/myIndex.spring]
+2014-01-29 21:24:36 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/myIndex.spring]
+2014-01-29 21:24:36 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.MyIndexController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:24:36 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:36 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:36 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:36 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:36 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:36 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:36 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name '/WEB-INF/myIndex'
+2014-01-29 21:24:36 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/myIndex'; URL [//WEB-INF/myIndex.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:36 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name '/WEB-INF/myIndex'
+2014-01-29 21:24:36 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/myIndex.jsp] in InternalResourceView '/WEB-INF/myIndex'
+2014-01-29 21:24:36 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:38 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/ask.spring]
+2014-01-29 21:24:38 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/ask.spring] to handler 'com.smartstack.controllers.QuestionController@400806'
+2014-01-29 21:24:38 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/ask.spring] is: -1
+2014-01-29 21:24:38 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/ask.spring]
+2014-01-29 21:24:38 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/ask.spring]
+2014-01-29 21:24:38 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/ask.spring]
+2014-01-29 21:24:38 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.QuestionController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:24:38 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'WEB-INF/ask'
+2014-01-29 21:24:38 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'WEB-INF/ask'; URL [/WEB-INF/ask.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:38 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'WEB-INF/ask'
+2014-01-29 21:24:38 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/ask.jsp] in InternalResourceView 'WEB-INF/ask'
+2014-01-29 21:24:38 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:55 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing POST request for [/SmartStack/login.spring]
+2014-01-29 21:24:55 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/login.spring] to handler 'com.smartstack.controllers.LoginController@9b3008'
+2014-01-29 21:24:55 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/login.spring]
+2014-01-29 21:24:55 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/login.spring]
+2014-01-29 21:24:55 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public java.lang.String com.smartstack.controllers.LoginController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:24:55 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:55 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:55 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:55 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:55 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:55 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/first'; URL [//WEB-INF/first.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:55 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/first.jsp] in InternalResourceView '/WEB-INF/first'
+2014-01-29 21:24:55 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:55 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/myIndex.spring]
+2014-01-29 21:24:55 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/myIndex.spring] to handler 'com.smartstack.controllers.MyIndexController@1087eac'
+2014-01-29 21:24:55 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/myIndex.spring] is: -1
+2014-01-29 21:24:55 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/myIndex.spring]
+2014-01-29 21:24:55 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/myIndex.spring]
+2014-01-29 21:24:55 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/myIndex.spring]
+2014-01-29 21:24:55 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.MyIndexController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:24:55 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:55 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:55 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:24:55 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:24:55 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:24:55 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:24:55 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/myIndex'; URL [//WEB-INF/myIndex.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:55 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name '/WEB-INF/myIndex'
+2014-01-29 21:24:55 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/myIndex.jsp] in InternalResourceView '/WEB-INF/myIndex'
+2014-01-29 21:24:55 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:24:57 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/ask.spring]
+2014-01-29 21:24:57 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/ask.spring] to handler 'com.smartstack.controllers.QuestionController@400806'
+2014-01-29 21:24:57 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/ask.spring] is: -1
+2014-01-29 21:24:57 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/ask.spring]
+2014-01-29 21:24:57 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/ask.spring]
+2014-01-29 21:24:57 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/ask.spring]
+2014-01-29 21:24:57 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.QuestionController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:24:57 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'WEB-INF/ask'; URL [/WEB-INF/ask.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:24:57 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'WEB-INF/ask'
+2014-01-29 21:24:57 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/ask.jsp] in InternalResourceView 'WEB-INF/ask'
+2014-01-29 21:24:57 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:25:09 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing POST request for [/SmartStack/quesSubmitReal.spring]
+2014-01-29 21:25:09 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/quesSubmitReal.spring] to handler 'com.smartstack.controllers.QuestionController@400806'
+2014-01-29 21:25:09 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/quesSubmitReal.spring]
+2014-01-29 21:25:09 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/quesSubmitReal.spring]
+2014-01-29 21:25:09 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.QuestionController.put(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String,java.lang.String[])
+2014-01-29 21:25:09 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'qaModelObj'
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:25:09 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:25:09 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:25:09 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:25:09 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:25:09 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:25:09 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:25:09 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:25:09 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:25:09 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:25:09 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:25:09 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:25:09 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'WEB-INF/myAccount'
+2014-01-29 21:25:09 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'WEB-INF/myAccount'; URL [/WEB-INF/myAccount.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:25:09 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'WEB-INF/myAccount'
+2014-01-29 21:25:09 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/myAccount.jsp] in InternalResourceView 'WEB-INF/myAccount'
+2014-01-29 21:25:09 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:10 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/myIndex.spring]
+2014-01-29 21:27:10 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/myIndex.spring] to handler 'com.smartstack.controllers.MyIndexController@1087eac'
+2014-01-29 21:27:10 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/myIndex.spring] is: -1
+2014-01-29 21:27:10 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/myIndex.spring]
+2014-01-29 21:27:10 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/myIndex.spring]
+2014-01-29 21:27:10 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/myIndex.spring]
+2014-01-29 21:27:10 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.MyIndexController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:27:10 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:27:10 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:10 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:10 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:10 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:10 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:10 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:10 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:10 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:10 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/myIndex'; URL [//WEB-INF/myIndex.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:10 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name '/WEB-INF/myIndex'
+2014-01-29 21:27:10 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/myIndex.jsp] in InternalResourceView '/WEB-INF/myIndex'
+2014-01-29 21:27:10 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:14 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/myAccount.spring]
+2014-01-29 21:27:14 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/myAccount.spring] to handler 'com.smartstack.controllers.MyAccountController@12cd998'
+2014-01-29 21:27:14 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/myAccount.spring] is: -1
+2014-01-29 21:27:14 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/myAccount.spring]
+2014-01-29 21:27:14 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/myAccount.spring]
+2014-01-29 21:27:14 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/myAccount.spring]
+2014-01-29 21:27:14 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.MyAccountController.get2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:27:14 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'qaModelObj'
+2014-01-29 21:27:14 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:14 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:15 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:15 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:15 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:15 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:15 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:15 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:15 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:15 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:15 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name '/WEB-INF/myAccount'
+2014-01-29 21:27:15 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/myAccount'; URL [//WEB-INF/myAccount.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:15 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name '/WEB-INF/myAccount'
+2014-01-29 21:27:15 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/myAccount.jsp] in InternalResourceView '/WEB-INF/myAccount'
+2014-01-29 21:27:15 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:20 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/myIndex.spring]
+2014-01-29 21:27:20 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/myIndex.spring] to handler 'com.smartstack.controllers.MyIndexController@1087eac'
+2014-01-29 21:27:20 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/myIndex.spring] is: -1
+2014-01-29 21:27:20 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/myIndex.spring]
+2014-01-29 21:27:20 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/myIndex.spring]
+2014-01-29 21:27:20 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/myIndex.spring]
+2014-01-29 21:27:20 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.MyIndexController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession,java.lang.String,java.lang.String)
+2014-01-29 21:27:20 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:27:20 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:20 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:20 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:20 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:20 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name '/WEB-INF/myIndex'; URL [//WEB-INF/myIndex.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:20 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name '/WEB-INF/myIndex'
+2014-01-29 21:27:20 DEBUG JstlView:236 - Forwarding to resource [//WEB-INF/myIndex.jsp] in InternalResourceView '/WEB-INF/myIndex'
+2014-01-29 21:27:20 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:22 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/ask.spring]
+2014-01-29 21:27:22 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/ask.spring] to handler 'com.smartstack.controllers.QuestionController@400806'
+2014-01-29 21:27:22 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/ask.spring] is: -1
+2014-01-29 21:27:22 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/ask.spring]
+2014-01-29 21:27:22 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/ask.spring]
+2014-01-29 21:27:22 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/ask.spring]
+2014-01-29 21:27:22 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.QuestionController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:27:22 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'WEB-INF/ask'; URL [/WEB-INF/ask.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:22 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'WEB-INF/ask'
+2014-01-29 21:27:22 DEBUG JstlView:236 - Forwarding to resource [/WEB-INF/ask.jsp] in InternalResourceView 'WEB-INF/ask'
+2014-01-29 21:27:22 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:26 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/logout.spring]
+2014-01-29 21:27:26 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/logout.spring] to handler 'com.smartstack.controllers.LogoutController@2d6a3d'
+2014-01-29 21:27:26 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/logout.spring] is: -1
+2014-01-29 21:27:26 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/logout.spring]
+2014-01-29 21:27:26 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/logout.spring]
+2014-01-29 21:27:26 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/logout.spring]
+2014-01-29 21:27:26 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.LogoutController.get(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2014-01-29 21:27:26 DEBUG DefaultListableBeanFactory:1453 - Invoking afterPropertiesSet() on bean with name 'first'
+2014-01-29 21:27:26 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'first'; URL [/first.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:26 DEBUG JstlView:236 - Forwarding to resource [/first.jsp] in InternalResourceView 'first'
+2014-01-29 21:27:26 DEBUG DispatcherServlet:845 - DispatcherServlet with name 'dispatcher' determining Last-Modified value for [/SmartStack/indexReal.spring]
+2014-01-29 21:27:26 DEBUG DefaultAnnotationHandlerMapping:221 - Mapping [/indexReal.spring] to handler 'com.smartstack.controllers.IndexController@16e6c7e'
+2014-01-29 21:27:26 DEBUG DispatcherServlet:861 - Last-Modified value for [/SmartStack/indexReal.spring] is: -1
+2014-01-29 21:27:26 DEBUG DispatcherServlet:693 - DispatcherServlet with name 'dispatcher' processing GET request for [/SmartStack/indexReal.spring]
+2014-01-29 21:27:26 DEBUG WebContentInterceptor:145 - Looking up cache seconds for [/indexReal.spring]
+2014-01-29 21:27:26 DEBUG WebContentInterceptor:157 - Applying default cache seconds to [/indexReal.spring]
+2014-01-29 21:27:26 DEBUG HandlerMethodInvoker:172 - Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.smartstack.controllers.IndexController.get(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2014-01-29 21:27:26 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:27:26 DEBUG DefaultListableBeanFactory:242 - Returning cached instance of singleton bean 'fetch1'
+2014-01-29 21:27:26 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:26 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:26 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:26 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:26 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 21:27:26 DEBUG SessionFactoryUtils:322 - Opening Hibernate Session
+2014-01-29 21:27:26 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+2014-01-29 21:27:26 DEBUG HibernateTemplate:389 - Eagerly flushing Hibernate session
+2014-01-29 21:27:26 DEBUG SessionFactoryUtils:800 - Closing Hibernate Session
+2014-01-29 21:27:26 DEBUG DispatcherServlet:1061 - Rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/index.jsp]] in DispatcherServlet with name 'dispatcher'
+2014-01-29 21:27:26 DEBUG JstlView:328 - Added model object 'key' of type [java.util.HashMap] to request in view with name 'index'
+2014-01-29 21:27:26 DEBUG JstlView:236 - Forwarding to resource [/index.jsp] in InternalResourceView 'index'
+2014-01-29 21:27:26 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:27:26 DEBUG DispatcherServlet:674 - Successfully completed request
+2014-01-29 21:33:51 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:33:51 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:33:51 IST 2014]; root of context hierarchy
+2014-01-29 21:33:51 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:33:52 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@150a639: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:33:52 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:33:53 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:33:57 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 6431 ms
+2014-01-29 21:33:57 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:33:57 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:33:57 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:33:57 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:33:58 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@196c7f8: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@150a639
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@136bf6]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@136bf6]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@136bf6]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@136bf6]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@136bf6]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@6642f5]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@6642f5]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@6642f5]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@d73ce1]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@10ccf41]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@10ccf41]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@366efe]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@366efe]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@366efe]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@101436b]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@101436b]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@101436b]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@955d9f]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@955d9f]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@873c41]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@f18595]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@f18595]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@f18595]
+2014-01-29 21:33:59 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@f18595]
+2014-01-29 21:33:59 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 1778 ms
+2014-01-29 21:34:37 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:34:37 INFO  IndexController:62 - No. of Questions: 0
+2014-01-29 21:34:56 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:34:56 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:34:59 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:34:59 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:01 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:01 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:06 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:06 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:09 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:09 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:11 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:11 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:15 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:15 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:20 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:20 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:35:51 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:35:51 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:37:19 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:37:19 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:37:43 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:37:43 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:37:52 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:37:52 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:38:15 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:38:15 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 21:41:04 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:33:57 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:41:04 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@196c7f8: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@150a639
+2014-01-29 21:41:04 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:33:51 IST 2014]; root of context hierarchy
+2014-01-29 21:41:04 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@150a639: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:41:04 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:41:18 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:41:18 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:41:18 IST 2014]; root of context hierarchy
+2014-01-29 21:41:19 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:41:19 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@124287: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:41:19 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:41:20 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:41:24 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 6122 ms
+2014-01-29 21:41:24 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:41:24 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:41:24 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:41:24 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:41:24 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c1ebd4: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@124287
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@1de23d6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@1de23d6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@1de23d6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@1de23d6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@1de23d6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@9b2ff0]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@9b2ff0]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@9b2ff0]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@c368b0]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@a2fbe6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@a2fbe6]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@95d2fb]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@95d2fb]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@95d2fb]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@1360afa]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@1360afa]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@1360afa]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@39fedb]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@39fedb]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@7e91d3]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@e6479e]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@e6479e]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@e6479e]
+2014-01-29 21:41:25 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@e6479e]
+2014-01-29 21:41:25 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 855 ms
+2014-01-29 21:42:36 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 21:42:36 INFO  IndexController:62 - No. of Questions: 0
+2014-01-29 21:44:41 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:41:24 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:44:41 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c1ebd4: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@124287
+2014-01-29 21:44:41 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:41:18 IST 2014]; root of context hierarchy
+2014-01-29 21:44:41 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@124287: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:44:41 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:44:56 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:44:57 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:44:57 IST 2014]; root of context hierarchy
+2014-01-29 21:44:57 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:44:58 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@308209: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:44:59 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:45:00 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:45:04 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 8110 ms
+2014-01-29 21:45:04 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:45:04 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:45:04 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:45:04 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:45:04 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38a8a8: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@308209
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@15eac78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@15eac78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@15eac78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@15eac78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@15eac78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@b5d13c]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@b5d13c]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@b5d13c]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@647a1a]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@109a767]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@109a767]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@1bce193]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@1bce193]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@1bce193]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@1792dc4]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@1792dc4]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@1792dc4]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@1425a78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@1425a78]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@1905f0e]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@c66f9f]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@c66f9f]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@c66f9f]
+2014-01-29 21:45:05 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@c66f9f]
+2014-01-29 21:45:05 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 853 ms
+2014-01-29 21:45:15 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:45:04 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:45:15 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38a8a8: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@308209
+2014-01-29 21:45:15 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:44:57 IST 2014]; root of context hierarchy
+2014-01-29 21:45:15 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@308209: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:45:15 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:45:26 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:45:26 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:45:26 IST 2014]; root of context hierarchy
+2014-01-29 21:45:26 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:45:26 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10a4f05: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:45:27 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:45:29 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:45:36 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 10056 ms
+2014-01-29 21:45:36 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:45:36 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:45:36 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:45:36 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:45:36 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1750175: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@10a4f05
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@9b4990]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@9b4990]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@9b4990]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@9b4990]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@9b4990]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@b09151]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@b09151]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@b09151]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@125e492]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@12a0dd]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@12a0dd]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@88a1f4]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@88a1f4]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@88a1f4]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@890dce]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@890dce]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@890dce]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@e96dd9]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@e96dd9]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@11086ba]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@7da952]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@7da952]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@7da952]
+2014-01-29 21:45:37 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@7da952]
+2014-01-29 21:45:38 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 1900 ms
+2014-01-29 21:45:43 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:45:36 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:45:43 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1750175: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@10a4f05
+2014-01-29 21:45:43 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:45:26 IST 2014]; root of context hierarchy
+2014-01-29 21:45:43 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10a4f05: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:45:43 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:45:54 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:45:54 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:45:54 IST 2014]; root of context hierarchy
+2014-01-29 21:45:54 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:45:54 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f1c334: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:45:55 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:45:56 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:46:00 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 5914 ms
+2014-01-29 21:46:00 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:46:00 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:46:00 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:46:00 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:46:00 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1861697: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1f1c334
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@167bd8f]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@167bd8f]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@167bd8f]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@167bd8f]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@167bd8f]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@4350ea]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@4350ea]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@4350ea]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@19b314b]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@6f6e63]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@6f6e63]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@914055]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@914055]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@914055]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@1efcbb]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@1efcbb]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@1efcbb]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@8c0190]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@8c0190]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@f84faa]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@5c82b1]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@5c82b1]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@5c82b1]
+2014-01-29 21:46:00 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@5c82b1]
+2014-01-29 21:46:01 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 847 ms
+2014-01-29 21:48:42 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:46:00 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:48:42 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1861697: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1f1c334
+2014-01-29 21:48:42 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:45:54 IST 2014]; root of context hierarchy
+2014-01-29 21:48:42 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f1c334: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:48:42 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 21:55:15 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 21:55:15 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 21:55:15 IST 2014]; root of context hierarchy
+2014-01-29 21:55:15 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 21:55:15 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d90df7: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 21:55:16 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 21:55:17 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 21:55:19 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 4010 ms
+2014-01-29 21:55:19 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 21:55:19 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:55:19 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 21:55:19 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 21:55:19 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b916c: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d90df7
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@1021113]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@1021113]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@1021113]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@1021113]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@1021113]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@442ad1]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@442ad1]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@442ad1]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@d784f5]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@c590ca]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@c590ca]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@5a4d06]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@5a4d06]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@5a4d06]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@6765a]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@6765a]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@6765a]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@878d37]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@878d37]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@b87a0f]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@1e6c7f2]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@1e6c7f2]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@1e6c7f2]
+2014-01-29 21:55:21 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@1e6c7f2]
+2014-01-29 21:55:21 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 1851 ms
+2014-01-29 22:05:23 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:05:23 INFO  IndexController:62 - No. of Questions: 0
+2014-01-29 22:06:13 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:06:13 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 22:07:16 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:07:16 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 22:08:56 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:08:56 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:10 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:10 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:25 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:25 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:29 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:29 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:39 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:39 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:54 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:54 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:09:56 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:09:56 INFO  IndexController:62 - No. of Questions: 26
+2014-01-29 22:11:10 INFO  XmlWebApplicationContext:1002 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 21:55:19 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 22:11:10 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b916c: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d90df7
+2014-01-29 22:11:10 INFO  XmlWebApplicationContext:1002 - Closing Root WebApplicationContext: startup date [Wed Jan 29 21:55:15 IST 2014]; root of context hierarchy
+2014-01-29 22:11:10 INFO  DefaultListableBeanFactory:422 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d90df7: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 22:11:10 INFO  LocalSessionFactoryBean:223 - Closing Hibernate SessionFactory
+2014-01-29 22:11:30 INFO  ContextLoader:187 - Root WebApplicationContext: initialization started
+2014-01-29 22:11:30 INFO  XmlWebApplicationContext:456 - Refreshing Root WebApplicationContext: startup date [Wed Jan 29 22:11:30 IST 2014]; root of context hierarchy
+2014-01-29 22:11:30 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2014-01-29 22:11:30 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@135dc0: defining beans [org.springframework.web.servlet.handler.MappedInterceptor#0,qaModelObj,qaImp,fetch1,userImp,daoImp,hibernateTemplateBean,sfBean,dataSourceBean]; root of factory hierarchy
+2014-01-29 22:11:30 INFO  DriverManagerDataSource:153 - Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2014-01-29 22:11:31 INFO  LocalSessionFactoryBean:780 - Building new Hibernate SessionFactory
+2014-01-29 22:11:34 INFO  ContextLoader:214 - Root WebApplicationContext: initialization completed in 4368 ms
+2014-01-29 22:11:34 INFO  DispatcherServlet:301 - FrameworkServlet 'dispatcher': initialization started
+2014-01-29 22:11:34 INFO  XmlWebApplicationContext:456 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jan 29 22:11:34 IST 2014]; parent: Root WebApplicationContext
+2014-01-29 22:11:34 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2014-01-29 22:11:34 INFO  DefaultListableBeanFactory:549 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f259cd: defining beans [ajaxController,indexController,loginController,logoutController,myAccountController,myIndexController,questionController,registerController,solutionController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@135dc0
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ajax.spring] onto handler [com.smartstack.controllers.AjaxController@a2f7b5]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/authenticate.spring] onto handler [com.smartstack.controllers.AjaxController@a2f7b5]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/vote.spring] onto handler [com.smartstack.controllers.AjaxController@a2f7b5]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/voteSol.spring] onto handler [com.smartstack.controllers.AjaxController@a2f7b5]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/makeFavQues.spring] onto handler [com.smartstack.controllers.AjaxController@a2f7b5]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/search.spring] onto handler [com.smartstack.controllers.IndexController@1692818]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/indexReal.spring] onto handler [com.smartstack.controllers.IndexController@1692818]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/sort.spring] onto handler [com.smartstack.controllers.IndexController@1692818]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/login.spring] onto handler [com.smartstack.controllers.LoginController@5b54bb]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/logout.spring] onto handler [com.smartstack.controllers.LogoutController@11f3b04]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/feedbackSubmit.spring] onto handler [com.smartstack.controllers.LogoutController@11f3b04]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/updateData.spring] onto handler [com.smartstack.controllers.MyAccountController@5305a6]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/update.spring] onto handler [com.smartstack.controllers.MyAccountController@5305a6]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myAccount.spring] onto handler [com.smartstack.controllers.MyAccountController@5305a6]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySearch.spring] onto handler [com.smartstack.controllers.MyIndexController@5b58d1]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/myIndex.spring] onto handler [com.smartstack.controllers.MyIndexController@5b58d1]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/mySort.spring] onto handler [com.smartstack.controllers.MyIndexController@5b58d1]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/ask.spring] onto handler [com.smartstack.controllers.QuestionController@1bd38aa]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/quesSubmitReal.spring] onto handler [com.smartstack.controllers.QuestionController@1bd38aa]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/register.spring] onto handler [com.smartstack.controllers.RegisterController@c07581]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolutionRedirect.spring] onto handler [com.smartstack.controllers.SolutionController@1ae920d]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/publicSolution.spring] onto handler [com.smartstack.controllers.SolutionController@1ae920d]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/solution.spring] onto handler [com.smartstack.controllers.SolutionController@1ae920d]
+2014-01-29 22:11:35 INFO  DefaultAnnotationHandlerMapping:411 - Mapped URL path [/submitSolution.spring] onto handler [com.smartstack.controllers.SolutionController@1ae920d]
+2014-01-29 22:11:35 INFO  DispatcherServlet:320 - FrameworkServlet 'dispatcher': initialization completed in 879 ms
+2014-01-29 22:15:44 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:15:44 INFO  IndexController:62 - No. of Questions: 0
+2014-01-29 22:15:53 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:15:54 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 22:16:03 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:16:03 INFO  IndexController:62 - No. of Questions: 25
+2014-01-29 22:16:14 INFO  IndexController:49 - !!! ---- WELCOME ---- !!!
+2014-01-29 22:16:14 INFO  IndexController:62 - No. of Questions: 25
