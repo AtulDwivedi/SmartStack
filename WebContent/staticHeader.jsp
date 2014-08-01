@@ -41,7 +41,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-     <a class="navbar-brand" href="first.jsp"> SmartStack :)</a> </div>
+     <a class="navbar-brand" href="first.jsp"> SmartStack</a> </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="first.jsp">Home</a></li>

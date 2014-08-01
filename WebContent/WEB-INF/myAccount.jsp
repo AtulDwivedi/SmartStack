@@ -183,7 +183,7 @@
 <!-- Footer -->
  <div class="container">
     <hr />
-    <p class="text-muted credit">&copy;All rigth reserved. Smart Stack :)</p>
+    <p class="text-muted credit">&copy;All rigth reserved. Smart Stack</p>
   </div>
 <!-- /Footer -->
 

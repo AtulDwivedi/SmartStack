@@ -31,36 +31,36 @@ import com.smartstack.models.RegisterBL;
 
 @Controller
 public class IndexController {
-	
+
 	int pageNo=1;
 	int pageSize=5;
 	static List<Question> myList=null;
 	static int previousRowCount = 0;
 	static int currentRowCount=0;
-	
+
 	//Logger logger = Logger.getLogger(IndexController.class);
-	
-	
+
+
 	@RequestMapping(value="/indexReal.spring", method=RequestMethod.GET)
 	public ModelAndView get(HttpServletRequest request, 
-							@RequestParam("page")String page, 
-							@RequestParam("pagesize")String pagesige){
-		 
+			@RequestParam("page")String page, 
+			@RequestParam("pagesize")String pagesige){
+
 		//logger.info("!!! ---- WELCOME ---- !!!");
-		
+
 		if(request.getParameter("page") != null)
-	            pageNo = Integer.parseInt(request.getParameter("page"));
-		
+			pageNo = Integer.parseInt(request.getParameter("page"));
+
 		if(request.getParameter("pagesize") != null)
 			pageSize = Integer.parseInt(request.getParameter("pagesize"));
-		 
+
 		WebApplicationContext context =RequestContextUtils.getWebApplicationContext(request);
 		RegisterBL fetch = (RegisterBL)context.getBean("fetch1");
-		
-		
+
+
 		currentRowCount = fetch.getQuesRowCount();
 		//logger.info("No. of Questions: "+currentRowCount);
-		
+
 		if(myList == null){
 			myList = fetch.getQuestionByDefault();
 		}
@@ -68,7 +68,7 @@ public class IndexController {
 			myList = fetch.getQuestionByDefault();
 			previousRowCount = currentRowCount;
 		}
-		
+
 		int length = 0;int temp=0;
 		if(myList.size()%pageSize == 0){
 			length = myList.size()/pageSize;
@@ -77,32 +77,32 @@ public class IndexController {
 			length = myList.size()/pageSize + 1;
 			temp = myList.size()%pageSize;
 		}
-		
+
 		//System.out.println((pageNo-1)*pageSize);
 		//System.out.println(((pageNo-1)*pageSize)+pageSize-1);
-		
+
 		List<Question> list = myList.subList((pageNo-1)*pageSize, 
 				((pageNo-1)*pageSize)+pageSize > myList.size() ? ((pageNo-1)*pageSize)+temp : ((pageNo-1)*pageSize)+pageSize );
-	
+
 		//System.out.println(list.size());
-				
-		
-	Map<String, Object> map = new HashMap<String, Object>();
-	map.put("list", list);
-	map.put("length", length);
-	map.put("pageNo", pageNo);
-	map.put("pagesize", pageSize);
-	
+
+
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("list", list);
+		map.put("length", length);
+		map.put("pageNo", pageNo);
+		map.put("pagesize", pageSize);
+
 		return new ModelAndView("index", "key", map);
 	}
-	
+
 	@RequestMapping(value="/sort.spring", method=RequestMethod.GET)
 	public void getIndexsort(HttpServletRequest request, 
 			HttpServletResponse response, 
 			@RequestParam("sortBy")String sortBy){
-		
+
 		Comparator<Question> customSort=null;
-		
+
 		if(sortBy.equals("top")){
 			myList.clear();
 			previousRowCount = 0;
@@ -123,43 +123,8 @@ public class IndexController {
 			customSort = new SortOnAns();
 			Collections.sort(myList,customSort);
 		}
-		
-		
-		try {
-			request.getRequestDispatcher("indexReal.spring?page=1&pagesize=5").forward(request, response);
-		} catch (ServletException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		 catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-		 }
-	}
 
-	@RequestMapping(value=("/search.spring"), method=RequestMethod.GET)
-	public void get(HttpServletRequest request, 
-			HttpServletResponse response,
-			@RequestParam("search")String search){
-		
-		List<Question> searchedQuesList = new ArrayList<Question>();
-		
-		
-		for (Iterator<Question> iterator = myList.iterator(); iterator.hasNext();) {
-			Question question = (Question) iterator.next();
-			List<String> tagList = question.getTagList();
-			for (Iterator<String> iterator2 = tagList.iterator(); iterator2.hasNext();) {
-				String string = (String) iterator2.next();
-				if(string.equalsIgnoreCase(search)){
-					searchedQuesList.add(question);
-					//break;
-				}
-					
-			}
-		}
-		
-		myList = searchedQuesList;
-		
+
 		try {
 			request.getRequestDispatcher("indexReal.spring?page=1&pagesize=5").forward(request, response);
 		} catch (ServletException e) {
@@ -170,7 +135,42 @@ public class IndexController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+	}
+
+	@RequestMapping(value=("/search.spring"), method=RequestMethod.GET)
+	public void get(HttpServletRequest request, 
+			HttpServletResponse response,
+			@RequestParam("search")String search){
+
+		List<Question> searchedQuesList = new ArrayList<Question>();
+
+
+		for (Iterator<Question> iterator = myList.iterator(); iterator.hasNext();) {
+			Question question = (Question) iterator.next();
+			List<String> tagList = question.getTagList();
+			for (Iterator<String> iterator2 = tagList.iterator(); iterator2.hasNext();) {
+				String string = (String) iterator2.next();
+				if(string.equalsIgnoreCase(search)){
+					searchedQuesList.add(question);
+					//break;
+				}
+
+			}
+		}
+
+		myList = searchedQuesList;
+
+		try {
+			request.getRequestDispatcher("indexReal.spring?page=1&pagesize=5").forward(request, response);
+		} catch (ServletException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }

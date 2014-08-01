@@ -15,7 +15,7 @@
   <div class="container">
     <hr />
     <p class="text-muted credit">&copy;All rigth reserved. 
-    <B>SmartStack</B> by <B>Ankit</B> and <B>Atul</B> CDAC ACTS, Bangalore KP</p>
+    <B>SmartStack</B> by <B>Anuj, Subhajit</B> and <B>Kunal</B> CDAC ACTS, Bangalore KP</p>
   </div>
 </body>
 </html>

@@ -77,7 +77,7 @@ public class SolutionController {
 				
 				User user = (User) session.getAttribute("user");
 				if(user != null){
-				solObj = new Solution(qId, user.getUserId(),user.getName(), solutionText, date,((int)(Math.random()*100)));
+				solObj = new Solution(qId, user.getUserId(),user.getName(), solutionText, date,0/*((int)(Math.random()*100))*/);
 				WebApplicationContext context =RequestContextUtils.getWebApplicationContext(request);
 				QuestionAndAnswerBL fetch = (QuestionAndAnswerBL)context.getBean("qaModelObj");
 				

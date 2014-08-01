@@ -147,7 +147,7 @@ Programmers can submit their technical problem and ask for solution.</p>
         <div class="col-md-11">
           <p class="text-info"> ${sol.solution}</p>
           <hr>
-          <span class="pull-left">By <a href="#">${key.session.name}</a><b>&nbsp; Reputation: 100</b></span>
+          <span class="pull-left">By <a href="#"> ${sol.name} <%-- ${key.session.name} --%></a><b>&nbsp; Reputation: 100</b></span>
           <span class="pull-right"> ${sol.date}</span> </div>
       </div> <input type="hidden" id="solId" value="${sol.solId }">
     </div>
