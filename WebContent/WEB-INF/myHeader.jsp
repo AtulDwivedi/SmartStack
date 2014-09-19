@@ -1,4 +1,4 @@
-<%@page import="org.h2.value.Value"%>
+<%-- <%@page import="org.h2.value.Value"%> --%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/c.tld" prefix="c" %>

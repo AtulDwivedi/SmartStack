@@ -12,27 +12,22 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping(value="/logout.spring")
 public class LogoutController{
-	
-	
 
-		@RequestMapping(method=RequestMethod.GET)
-		public ModelAndView get(HttpServletRequest request, HttpSession session){
-
-			//String page="Login_Signup";
-			
-			session = request.getSession();
+	@RequestMapping(method=RequestMethod.GET)
+	public ModelAndView get(HttpServletRequest request, HttpSession session){
+		session = request.getSession();
 		System.out.println("Hello");
-			
-			if(session != null){
-				session.removeAttribute("user");				
-				//page="first";
-			}
-		
+
+		if(session != null){
+			session.removeAttribute("user");				
+			//page="first";
+		}
+
 		return new ModelAndView("first");
-		
-		}	
-		
-	}
+
+	}	
+
+}
 
 
 

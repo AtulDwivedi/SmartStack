@@ -31,30 +31,30 @@ import com.smartstack.models.RegisterBL;
 
 @Controller
 public class MyIndexController {
-	
+
 	int pageNo=1;
 	int pageSize=5;
 	static List<Question> myList=null;
 	static int previousRowCount = 0;
 	static int currentRowCount=0;
-	
+
 	@RequestMapping(value="/myIndex.spring", method=RequestMethod.GET)
 	public ModelAndView get(HttpServletRequest request, HttpSession session, 
-							@RequestParam("page")String page, @RequestParam("pagesize")String pagesige){
-		 
+			@RequestParam("page")String page, @RequestParam("pagesize")String pagesige){
+
 		if(request.getParameter("page") != null)
-	            pageNo = Integer.parseInt(request.getParameter("page"));
-		
+			pageNo = Integer.parseInt(request.getParameter("page"));
+
 		if(request.getParameter("pagesize") != null)
 			pageSize = Integer.parseInt(request.getParameter("pagesize"));
-		 
-		
+
+
 		WebApplicationContext context =RequestContextUtils.getWebApplicationContext(request);
 		RegisterBL fetch = (RegisterBL)context.getBean("fetch1");
-		
+
 		currentRowCount = fetch.getQuesRowCount();
 		//System.out.println(this.getClass().getSimpleName()+": No. of Questions "+currentRowCount);
-		
+
 		if(myList == null){
 			myList = fetch.getQuestionByDefault();
 			session= request.getSession();
@@ -64,7 +64,7 @@ public class MyIndexController {
 			session= request.getSession();
 			previousRowCount = currentRowCount;
 		}
-		
+
 		int length = 0;int temp=0;
 		if(myList.size()%pageSize == 0){
 			length = myList.size()/pageSize;
@@ -73,33 +73,33 @@ public class MyIndexController {
 			length = myList.size()/pageSize + 1;
 			temp = myList.size()%pageSize;
 		}
-		
+
 		//System.out.println((pageNo-1)*pageSize);
 		//System.out.println(((pageNo-1)*pageSize)+pageSize-1);
-		
+
 		List<Question> list = myList.subList((pageNo-1)*pageSize, 
 				((pageNo-1)*pageSize)+pageSize > myList.size() ? ((pageNo-1)*pageSize)+temp : ((pageNo-1)*pageSize)+pageSize );
-	
+
 		//System.out.println(list.size());
-	
-	Map<String, Object> map = new HashMap<String, Object>();
-	map.put("list", list);
-	map.put("length", length);
-	map.put("pageNo", pageNo);
-	map.put("pagesize", pageSize);
-	map.put("session", session.getAttribute("user"));
+
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("list", list);
+		map.put("length", length);
+		map.put("pageNo", pageNo);
+		map.put("pagesize", pageSize);
+		map.put("session", session.getAttribute("user"));
 		return new ModelAndView("/WEB-INF/myIndex", "key", map);
 	}
-	
-	
+
+
 	@RequestMapping(value="/mySort.spring", method=RequestMethod.GET)
 	public void getIndexsort(HttpServletRequest request, 
 			HttpServletResponse response,
 			HttpSession session,
 			@RequestParam("sortBy")String sortBy){
-		
+
 		Comparator<Question> customSort=null;
-		
+
 		if(sortBy.equals("top")){
 			myList.clear();
 			previousRowCount = 0;
@@ -120,8 +120,8 @@ public class MyIndexController {
 			customSort = new SortOnAns();
 			Collections.sort(myList,customSort);
 		}
-		
-		
+
+
 		try {
 			request.getRequestDispatcher("myIndex.spring?page=1&pagesize=5").forward(request, response);
 		} catch (ServletException e) {
@@ -132,18 +132,18 @@ public class MyIndexController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
+
 	}
-	
-	
+
+
 	@RequestMapping(value=("/mySearch.spring"), method=RequestMethod.GET)
 	public void get(HttpServletRequest request, 
 			HttpServletResponse response,
 			@RequestParam("search")String search){
-		
+
 		List<Question> searchedQuesList = new ArrayList<Question>();
-		
-		
+
+
 		for (Iterator<Question> iterator = myList.iterator(); iterator.hasNext();) {
 			Question question = (Question) iterator.next();
 			List<String> tagList = question.getTagList();
@@ -153,12 +153,12 @@ public class MyIndexController {
 					searchedQuesList.add(question);
 					//break;
 				}
-					
+
 			}
 		}
-		
+
 		myList = searchedQuesList;
-		
+
 		try {
 			request.getRequestDispatcher("indexReal.spring?page=1&pagesize=5").forward(request, response);
 		} catch (ServletException e) {
@@ -169,6 +169,6 @@ public class MyIndexController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 }
