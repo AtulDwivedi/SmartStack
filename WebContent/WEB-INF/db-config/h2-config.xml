@@ -10,7 +10,7 @@
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSourceBean"></property>
 		<property name="mappingResources">
-			<value>com/smartstack/dto/Address.hbm.xml</value>
+			<value>com/smartstack/dto/smartstack.hbm.xml</value>
 		</property>
 		<property name="hibernateProperties">
 			<props>
