@@ -1,10 +1,8 @@
 package com.smartstack.controllers;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,14 +13,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import com.smartstack.dto.Badges;
-import com.smartstack.dto.Question;
-import com.smartstack.dto.Solution;
 import com.smartstack.dto.User;
-import com.smartstack.models.QuestionAndAnswerBL;
 import com.smartstack.models.RegisterBL;
 
 @Controller

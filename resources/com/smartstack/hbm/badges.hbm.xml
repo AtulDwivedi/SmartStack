@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.smartstack.dto.Badges" table="Badges">
+		<id name="badgeId" type="int" column="badge_id">
+			<generator class="assigned" />
+		</id>
+		<property name="badgeName" type="string" column="badge_Name" />
+	</class>
+</hibernate-mapping>

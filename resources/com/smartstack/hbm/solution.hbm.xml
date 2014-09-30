@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.smartstack.dto.Solution" table="Solution">
+		<id name="solId" type="long" column="sol_id">
+			<generator class="increment" />
+		</id>
+		<property name="quesId" type="long" column="ques_id" />
+		<property name="userId" type="long" column="user_id" />
+		<property name="name" type="string" column="name" />
+		<property name="solution" type="string" column="solution" />
+		<property name="date" type="timestamp" column="posting_date" />
+		<property name="votes" type="int" column="votes" />
+	</class>
+</hibernate-mapping>

@@ -6,12 +6,20 @@
       http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-<bean id="sessionFactoryBean"
+	<bean id="sessionFactoryBean"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSourceBean"></property>
 		<property name="mappingResources">
-			<value>com/smartstack/dto/smartstack.hbm.xml</value>
+			<list>
+				<value>com/smartstack/hbm/badges.hbm.xml</value>
+				<value>com/smartstack/hbm/login.hbm.xml</value>
+				<value>com/smartstack/hbm/question.hbm.xml</value>
+				<value>com/smartstack/hbm/solution.hbm.xml</value>
+				<value>com/smartstack/hbm/user.hbm.xml</value>
+			</list>
 		</property>
+		<!-- <property name="mappingLocations"> <value>classpath:com/smartstack/hbm/*.hbm.xml</value> 
+			</property> -->
 		<property name="hibernateProperties">
 			<props>
 				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop> -->
@@ -29,4 +37,5 @@
 		<property name="username" value="sa"></property>
 		<property name="password" value=""></property>
 	</bean>
+	<!-- <import resource="db-config/h2-config.xml" /> -->
 </beans>

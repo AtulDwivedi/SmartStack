@@ -38,7 +38,7 @@ public class IndexController {
 	static int previousRowCount = 0;
 	static int currentRowCount=0;
 
-	//Logger logger = Logger.getLogger(IndexController.class);
+	Logger logger = Logger.getLogger(IndexController.class);
 
 
 	@RequestMapping(value="/indexReal.spring", method=RequestMethod.GET)
@@ -46,7 +46,7 @@ public class IndexController {
 			@RequestParam("page")String page, 
 			@RequestParam("pagesize")String pagesige){
 
-		//logger.info("!!! ---- WELCOME ---- !!!");
+		logger.info("!!! ---- WELCOME ---- !!!");
 
 		if(request.getParameter("page") != null)
 			pageNo = Integer.parseInt(request.getParameter("page"));
@@ -59,7 +59,7 @@ public class IndexController {
 
 
 		currentRowCount = fetch.getQuesRowCount();
-		//logger.info("No. of Questions: "+currentRowCount);
+		logger.info("No. of Questions: "+currentRowCount);
 
 		if(myList == null){
 			myList = fetch.getQuestionByDefault();

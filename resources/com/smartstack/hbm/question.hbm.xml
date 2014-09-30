@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.smartstack.dto.Question" table="Question">
+		<id name="quesId" type="long" column="ques_id">
+			<generator class="increment" />
+		</id>
+		<property name="userId" type="long" column="user_id" />
+		<property name="name" type="string" column="name" />
+		<property name="votes" type="int" column="votes" />
+		<property name="ans" type="int" column="ans" />
+		<property name="quesTitle" type="string" column="ques_title" />
+		<property name="ques" type="string" column="ques" />
+		<!-- <property name="tags" type="string" column="tags" /> -->
+		<!-- <list name="tagList" table="Tags" lazy="false" fetch="select" cascade="all"> -->
+		<list name="tagList" table="Tags" lazy="false" fetch="select"
+			cascade="all">
+			<key column="SID"></key>
+			<list-index column="title"></list-index>
+			<element column="cid" type="java.lang.String" />
+		</list>
+
+		<property name="date" type="timestamp" column="posting_date" />
+	</class>
+
+</hibernate-mapping>
