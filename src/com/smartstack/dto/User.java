@@ -9,6 +9,22 @@ public class User {
 	private String emailId,name,password, dob;
 	private Set<Badges> badges;
 	private List<Long> favQues;
+
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public User(String emailId, String name, String password, String dob, Set<Badges> badges, List<Long> favQues) {
+		super();
+		this.emailId = emailId;
+		this.name = name;
+		this.password = password;
+		this.dob = dob;
+		this.badges = badges;
+		this.favQues = favQues;
+	}
 	
 	public long getUserId() {
 		return userId;
@@ -51,8 +67,6 @@ public class User {
 		this.password = password;
 	}
 
-	
-
 	public Set<Badges> getBadges() {
 		return badges;
 	}
@@ -67,21 +81,6 @@ public class User {
 
 	public void setFavQues(List<Long> favQues) {
 		this.favQues = favQues;
-	}
-
-	public User(String emailId, String name, String password, String dob, Set<Badges> badges, List<Long> favQues) {
-		super();
-		this.emailId = emailId;
-		this.name = name;
-		this.password = password;
-		this.dob = dob;
-		this.badges = badges;
-		this.favQues = favQues;
-	}
-
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public User(long userId, String emailId, String name, String password,
@@ -116,9 +115,4 @@ public class User {
 		builder.append("]");
 		return builder.toString();
 	}
-
-	
-	
-	
-
 }

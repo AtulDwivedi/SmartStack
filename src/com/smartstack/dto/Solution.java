@@ -4,6 +4,7 @@ import java.util.Date;
 
 
 public class Solution {
+
 	private long solId;
 	private long quesId;
 	private long userId;
@@ -11,61 +12,12 @@ public class Solution {
 	private String solution;
 	private Date date;
 	private int votes;
-	
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public long getSolId() {
-		return solId;
-	}
-	public void setSolId(long solId) {
-		this.solId = solId;
-	}
-	public long getQuesId() {
-		return quesId;
-	}
-	public void setQuesId(long quesId) {
-		this.quesId = quesId;
-	}
-	public long getUserId() {
-		return userId;
-	}
-	public void setUserId(long userId) {
-		this.userId = userId;
-	}
-	public String getSolution() {
-		return solution;
-	}
-	public void setSolution(String solution) {
-		this.solution = solution;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	
+
 	public Solution() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	public int getVotes() {
-		return votes;
-	}
-	public void setVotes(int votes) {
-		this.votes = votes;
-	}
-	
-	
-	
-	
+
 	public Solution(long quesId, long userId, String name,
 			String solution, Date date, int votes) {
 		super();
@@ -76,6 +28,62 @@ public class Solution {
 		this.date = date;
 		this.votes = votes;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getSolId() {
+		return solId;
+	}
+
+	public void setSolId(long solId) {
+		this.solId = solId;
+	}
+
+	public long getQuesId() {
+		return quesId;
+	}
+
+	public void setQuesId(long quesId) {
+		this.quesId = quesId;
+	}
+
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
+	public String getSolution() {
+		return solution;
+	}
+
+	public void setSolution(String solution) {
+		this.solution = solution;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public int getVotes() {
+		return votes;
+	}
+	public void setVotes(int votes) {
+		this.votes = votes;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -96,11 +104,4 @@ public class Solution {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
-	
-	
-	
-	
-
 }

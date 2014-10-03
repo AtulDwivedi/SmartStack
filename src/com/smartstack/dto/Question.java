@@ -13,71 +13,13 @@ public class Question implements Comparable<Question> {
 	private String quesTitle;
 	private String ques;
 	private List<String> tagList;
-	//private String tags;
 	private Date date;
-	public long getQuesId() {
-		return quesId;
-	}
-	public void setQuesId(long quesId) {
-		this.quesId = quesId;
-	}
-	public long getUserId() {
-		return userId;
-	}
-	public void setUserId(long userId) {
-		this.userId = userId;
-	}
-	public int getVotes() {
-		return votes;
-	}
-	public void setVotes(int votes) {
-		this.votes = votes;
-	}
-	public int getAns() {
-		return ans;
-	}
-	public void setAns(int ans) {
-		this.ans = ans;
-	}
-	public String getQuesTitle() {
-		return quesTitle;
-	}
-	public void setQuesTitle(String quesTitle) {
-		this.quesTitle = quesTitle;
-	}
-	public String getQues() {
-		return ques;
-	}
-	public void setQues(String ques) {
-		this.ques = ques;
-	}
-	
-	public List<String> getTagList() {
-		return tagList;
-	}
-	public void setTagList(List<String> tagList) {
-		this.tagList = tagList;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	
-	
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	
 	public Question() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public Question(long userId, String name, int votes, int ans,
 			String quesTitle, String ques, List<String> tagList, Date date) {
 		super();
@@ -90,6 +32,79 @@ public class Question implements Comparable<Question> {
 		this.tagList = tagList;
 		this.date = date;
 	}
+	
+	public long getQuesId() {
+		return quesId;
+	}
+	
+	public void setQuesId(long quesId) {
+		this.quesId = quesId;
+	}
+	
+	public long getUserId() {
+		return userId;
+	}
+	
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+	
+	public int getVotes() {
+		return votes;
+	}
+	
+	public void setVotes(int votes) {
+		this.votes = votes;
+	}
+	
+	public int getAns() {
+		return ans;
+	}
+	
+	public void setAns(int ans) {
+		this.ans = ans;
+	}
+	
+	public String getQuesTitle() {
+		return quesTitle;
+	}
+	
+	public void setQuesTitle(String quesTitle) {
+		this.quesTitle = quesTitle;
+	}
+	
+	public String getQues() {
+		return ques;
+	}
+	
+	public void setQues(String ques) {
+		this.ques = ques;
+	}
+	
+	public List<String> getTagList() {
+		return tagList;
+	}
+	
+	public void setTagList(List<String> tagList) {
+		this.tagList = tagList;
+	}
+	
+	public Date getDate() {
+		return date;
+	}
+	
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -114,12 +129,14 @@ public class Question implements Comparable<Question> {
 		builder.append("]");
 		return builder.toString();
 	}
+	
 	@Override
 	public int compareTo(Question o) {
 		// TODO Auto-generated method stub
 		//this.date.compareTo(o.getDate());
 		return (int) (o.getQuesId() - this.quesId);
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -136,6 +153,7 @@ public class Question implements Comparable<Question> {
 		result = prime * result + votes;
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -180,13 +198,4 @@ public class Question implements Comparable<Question> {
 			return false;
 		return true;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

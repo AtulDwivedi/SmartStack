@@ -83,17 +83,17 @@ Programmers can submit their technical problem and ask for solution.</p>
   <div class="row alert alert-warning">
     <div class="col-md-1">
       <ul class="list-unstyled">
-        <li><a href="#" id="likeQues"><img src="resources/images/like.jpg" class="img-rounded" width="24" height="24" /></a></li>
+        <li><a href="#" id="likeQues"><span class="glyphicon glyphicon-thumbs-up"></span><!-- <img src="resources/images/like.jpg" class="img-rounded" width="24" height="24" /> --></a></li>
         <li><label class="label label-info" id="quesVotes">${key.ques.votes}</label></li>
-        <li><a href="#" id="disLikeQues"><img src="resources/images/dislike.jpg" class="img-rounded" width="24" height="24" /></a></li>
+        <li><a href="#" id="disLikeQues"><span class="glyphicon glyphicon-thumbs-down"></span><!-- <img src="resources/images/dislike.jpg" class="img-rounded" width="24" height="24" /> --></a></li>
          
          <!-- Favourit Question Logic  -->
                 <c:choose>
-                    <c:when test="${key.fav eq 1}">
+                    <c:when test="${key.fav eq 1}"><span class="glyphicon glyphicon-star-empty"></span>
                       <!--  <li><a id="makeFavQues" href="#"><img src="resources/images/favorite.jpg" class="img-rounded" width="24" height="24" /></a></li> -->
                     </c:when>
                     <c:otherwise>
-                        <li><a id="makeFavQues" href="#"><img src="resources/images/favorite.jpg" class="img-rounded" width="24" height="24" /></a></li>
+                        <li><a id="makeFavQues" href="#"><span class="glyphicon glyphicon-star"></span><!-- <img src="resources/images/favorite.jpg" class="img-rounded" width="24" height="24" /> --></a></li>
                     </c:otherwise>
                 </c:choose>
          <!-- /Favourit Question Logic -->
