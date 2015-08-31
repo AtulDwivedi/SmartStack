@@ -6,7 +6,7 @@ import com.smartstack.dto.Question;
 import com.smartstack.dto.Solution;
 import com.smartstack.dto.User;
 
-public interface DAOService {
+public interface DAOService extends DAOServices {
 	
 	//User
 	User createAccount(User user);

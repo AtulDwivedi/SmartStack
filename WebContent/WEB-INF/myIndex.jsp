@@ -41,7 +41,9 @@ span.glyphicon {
 span.glyphicon-search {
 	font-size: 1.0em;
 }
-
+span.glyphicon-hover {
+	font-size: 1.3em;
+}
 </style>
 </head>
 <body>
@@ -77,17 +79,66 @@ span.glyphicon-search {
 						<div class="input-group">
 							<div class="input-group-btn">
 								<button type="button" class="btn btn-default dropdown-toggle"
-									data-toggle="dropdown">
-									Action <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-								</ul>
-								
+										data-toggle="dropdown" data-hover="dropdown">
+										All <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+										<div style="float:left;width:100%;text-align:center">
+										<a href="myIndex.spring?page=1&pagesize=5">
+										<div style="float:left;width:20%;">
+										 <span class="glyphicon glyphicon-th glyphicon-hover"></span>
+											</div>
+											<div style="float:left;width:60%;text-align:left;">All</div>
+							<div style="float:left;width:20%"><span class="glyphicon glyphicon-ok glyphicon-hover"></div>
+											</a>
+											</div>
+										</li>
+										
+										<li>
+										<div style="float:left;width:100%;text-align:center"">
+										<a href="myIndex.spring?page=1&pagesize=5">
+										<div style="float:left;width:20%;">
+										 <span class="glyphicon glyphicon-tags glyphicon-hover"></span>
+											</div>
+											<div style="float:left;width:60%;text-align:left;">Tag</div>
+							<div style="float:left;width:20%"><span class="glyphicon glyphicon-ok glyphicon-hover"></div>
+											</a>
+											</div>
+										</li>
+										<li>
+										<div style="float:left;width:100%;text-align:center">
+										<a href="myIndex.spring?page=1&pagesize=5">
+										<div style="float:left;width:20%;">
+										 <span class="glyphicon glyphicon-question-sign glyphicon-hover"></span>
+											</div>
+											<div style="float:left;width:60%;text-align:left;">Question</div>
+							<div style="float:left;width:20%"><span class="glyphicon glyphicon-ok glyphicon-hover"></div>
+											</a>
+											</div>
+										<li>
+										<div style="float:left;width:100%;text-align:center">
+										<a href="myIndex.spring?page=1&pagesize=5">
+										<div style="float:left;width:20%;">
+										 <span class="glyphicon glyphicon-info-sign glyphicon-hover"></span>
+											</div>
+											<div style="float:left;width:60%;text-align:left;">Solution</div>
+							<div style="float:left;width:20%"><span class="glyphicon glyphicon-ok glyphicon-hover"></div>
+											</a>
+											</div>
+										<li>
+										<div style="float:left;width:100%;text-align:center">
+										<a href="myIndex.spring?page=1&pagesize=5">
+										<div style="float:left;width:20%;">
+										 <span class="glyphicon glyphicon-user glyphicon-hover"></span>
+											</div>
+											<div style="float:left;width:60%;text-align:left;">People</div>
+							<div style="float:left;width:20%"><span class="glyphicon glyphicon-ok glyphicon-hover"></div>
+											</a>
+											</div>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
 							</div>
 						<input class="form-control" type="text" placeholder="search" />
 					<div class="input-group-btn">
@@ -332,6 +383,7 @@ span.glyphicon-search {
 	<script
 		src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/smartstack-hover-dropdown.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.js"
 		type="text/javascript"></script>
 	<script
@@ -353,9 +405,9 @@ span.glyphicon-search {
 
 	<script>
     // very simple to use!
-    $(document).ready(function() {
+    /* $(document).ready(function() {
       $('.js-activated').dropdownHover().dropdown();
-    });
+    }); */
   </script>
 	<!-- /Script -->
 </body>

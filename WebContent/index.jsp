@@ -11,14 +11,7 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="resources/images/favicon.ico">
 <title>Welcome to SmartStack</title>
-<!-- 
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css"> 
--->
 <!-- Bootstrap core CSS -->
-
 <link
 	href="${pageContext.request.contextPath}/resources/css/bootstrap.css"
 	rel="stylesheet">
@@ -28,19 +21,25 @@
 <link
 	href="${pageContext.request.contextPath}/resources/css/navbar-fixed-top.css"
 	rel="stylesheet">
+<link href='${pageContext.request.contextPath}/resources/css/demo.css'
+	rel='stylesheet' media='screen' />
+<link
+	href='${pageContext.request.contextPath}/resources/css/confirm.css'
+	rel='stylesheet' media='screen' />
+<link
+	href="${pageContext.request.contextPath}/resources/css/navbar-fixed-top.css"
+	rel="stylesheet">
 <link
 	href="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui.css"
 	rel="stylesheet">
-
 <!-- /Bootstrap core CSS -->
 
 </head>
 <body>
-
 	<!-- Fixed navbar -->
 	<div id="mystaticHdr"></div>
-	<!-- /Fixed navbar -->
-
+ 	<!-- /Fixed navbar -->
+ 
 	<!-- Container -->
 	<div class="container">
 
@@ -226,12 +225,12 @@
 	<div id="footer"></div>
 	<!-- /Footer -->
 
-
-
 	<!-- Script -->
+	<script
+		src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
+	
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.js"
 		type="text/javascript"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
 	<script
 		src="${pageContext.request.contextPath}/resources/js/jquery-ajax.js"
 		type="text/javascript"></script>
@@ -244,6 +243,14 @@
 	<script
 		src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui-advanced.js"
 		type="text/javascript"></script>
-	<!-- /Script -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script
+		src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/js/bootstrap-hover-dropdown.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/smartstack-hover-dropdown.js"></script>
+	
+	
 </body>
 </html>

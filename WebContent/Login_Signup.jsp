@@ -10,6 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
+
+<!--  Google SignIn Resources -->
+<meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--  /Google SignIn Resources -->
+
 <link rel="shortcut icon" href="resources/images/favicon.ico">
 <title>Login or Sign up</title>
 <!-- Bootstrap core CSS -->
@@ -65,7 +72,9 @@
 						src="resources/images/google.jpg" class="img-circle img-thumbnail"
 						height="64" width="64" /></a> <a href="www.yahoo.com"><img src="resources/images/yahoo.jpg"
 						class="img-circle img-thumbnail" height="64" width="64" /></a> 
+						
 					</span>
+					<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 				</div>
 			</div>
 		</div>
@@ -182,6 +191,24 @@
 <script src="${pageContext.request.contextPath}/resources/js/jquery-ajax.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui.js"  type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/js/jquery-ui/jquery-ui-basics.js" type="text/javascript"></script>
+
+<!--  Google SignIn Script -->
+<script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+<!--  /Google SignIn Script -->
+
 <!-- /Script -->
 
 
