@@ -226,11 +226,12 @@
 	<!-- /Footer -->
 
 	<!-- Script -->
-	<script
-		src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script>
+	<%-- <script
+		src="${pageContext.request.contextPath}/resources/js/jquery-1.10.2.min.js"></script> --%>
 	
 	<script src="${pageContext.request.contextPath}/resources/js/jquery.js"
 		type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
 	<script
 		src="${pageContext.request.contextPath}/resources/js/jquery-ajax.js"
 		type="text/javascript"></script>
@@ -246,9 +247,10 @@
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script
 		src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		
 	<script
 		src="${pageContext.request.contextPath}/resources/js/bootstrap-hover-dropdown.js"></script>
-		<script src="${pageContext.request.contextPath}/resources/js/onload.js"></script>
+		
 	<script src="${pageContext.request.contextPath}/resources/js/smartstack-hover-dropdown.js"></script>
 	
 	

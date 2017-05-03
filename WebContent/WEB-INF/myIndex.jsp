@@ -198,7 +198,7 @@ span.glyphicon-hover {
 				enthusiast programmers. Programmers can submit their technical
 				problem and ask for solution.</p>
 			<p class="pull-right">
-				<a class="btn btn-default btn-primary" href="index.html"
+				<a class="btn btn-default btn-primary" href="myIndex.spring?page=1&pagesize=5"
 					role="button">Questions</a> <a class="btn btn-default btn-primary"
 					href="tags.html" role="button">Tags</a> <a
 					class="btn btn-default btn-primary" href="tour.html" role="button">Tour</a>

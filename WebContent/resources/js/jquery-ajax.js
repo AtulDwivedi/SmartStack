@@ -75,7 +75,7 @@ function auth(){
 	    				else{    					
 	    					//alert('hi');
 	    					 $(function() {
-	    						    $( "#dialog-confirm" ).dialog({
+	    						    $("#dialog-confirm").dialog({
 	    						      resizable: false,
 	    						      height:90,
 	    						      modal: true,

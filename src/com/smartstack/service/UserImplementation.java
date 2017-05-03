@@ -2,11 +2,15 @@ package com.smartstack.service;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.smartstack.dao.DAOService;
 import com.smartstack.dto.Question;
 import com.smartstack.dto.User;
 
 public class UserImplementation implements UserService {
+	
+	Logger logger = Logger.getLogger(UserImplementation.class);
      
 	private DAOService daoServe;
 	
@@ -33,7 +37,7 @@ public class UserImplementation implements UserService {
 	}
 	@Override
 	public boolean loginReal(String email, String password) {
-		// TODO Auto-generated method stub
+		logger.info("Inside loginReal");
 		return daoServe.checkLogin(email, password);
 	}
 	@Override

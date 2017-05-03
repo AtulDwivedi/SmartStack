@@ -54,7 +54,7 @@ public class DAOImplementation extends HibernateDaoSupport implements DAOService
 
 	@Override
 	public boolean checkLogin(String email, String password) {
-		// TODO Auto-generated method stub
+		logger.info("Inside checkLogin");
 		System.out.println(this.getClass().getSimpleName()+" EmailId: "+email+" Pass: "+password);
 		List<Login> login =getHibernateTemplate().find("from Login l where l.emailId=? and l.password=?",email, password);
 		if(login.size() > 0)

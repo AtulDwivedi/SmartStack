@@ -2,11 +2,15 @@ package com.smartstack.models;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.smartstack.dto.Question;
 import com.smartstack.dto.User;
 import com.smartstack.service.UserService;
 
 public class RegisterBL {
+	
+	Logger logger = Logger.getLogger(RegisterBL.class);
 	
 	private UserService userService;
 	private UserService userServe;
@@ -45,7 +49,7 @@ public class RegisterBL {
 	}*/
 	
 	public boolean loginReal(String email, String password){
-		System.out.println(this.getClass().getSimpleName());
+		logger.info("Inside loginReal");
 		return userServe.loginReal(email, password);
 	}
 	

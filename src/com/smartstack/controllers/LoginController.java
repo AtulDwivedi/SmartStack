@@ -22,7 +22,7 @@ public class LoginController{
 	Logger logger = Logger.getLogger(LoginController.class);
 
 	@RequestMapping(method=RequestMethod.POST)
-	public String get(HttpServletRequest request, 
+	public String login(HttpServletRequest request, 
 			HttpSession session,
 			@RequestParam("email")String email, 
 			@RequestParam("password")String password){
@@ -37,8 +37,9 @@ public class LoginController{
 			session = request.getSession();
 			session.setAttribute("user", user);
 			page="/WEB-INF/first";
-			logger.info("Login successfull.");
+			logger.info("Login successfull");
 		}
+		logger.info("Inside LoginController");
 		return page;
 	}	
 
